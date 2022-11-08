@@ -30,6 +30,7 @@ h1,h2,h3,p, li{
 
 }
 /* Cторінка Студія */
+/* Header */
 .container{
   margin-left: auto;
   margin-right: auto;
@@ -118,13 +119,22 @@ a{
   color:#2196F3;
   outline:none;
  }
+
+/* Coll-back */
+
  .coll-back{
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color:#2F303A;
   text-align: center;
 }
+.coll-back .hero{
+  text-align: center;
+}
 .hero{
-  padding-top: 160px;
-  padding-bottom: 44px;
+  width: 696px;
+  margin: 0 auto;
+  margin-bottom: 44px;
   color:var(--primery-white-color);
   font-weight: 900;
   font-size: 44px;
@@ -138,7 +148,6 @@ a{
   border:1px solid transparent;
   padding: 18px 32px;
   border-radius: 6px;
-  margin-bottom: 200px;
   color:var(--primery-white-color);
   font-weight: 700;
   font-size: 16px;
@@ -147,6 +156,8 @@ a{
   background: var(--accent-color);
 
 }
+
+/* advantages */
 .advantages{
   padding-top: 94px;
   margin-bottom: 94px;
@@ -155,6 +166,7 @@ a{
   display: none;
 }
 .advantages-item{
+  width: 270px;
   display: inline-block;
   margin-right: 30px;
 }
@@ -174,6 +186,8 @@ a{
   font-size: 14px;
   line-height: 1.7;
 }
+
+/* activity */
 .activity{
   display: block;
   padding-bottom: 94px;
@@ -185,13 +199,12 @@ a{
   display: flex;
   padding: 0;
 }
-.activity > .title,
-.teams > .title{
+.activity-title{
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
-  padding-bottom: 60px;
+  margin-bottom: 60px;
 }
 .activity-galery{
   padding-right: 30px;
@@ -200,14 +213,14 @@ a{
   padding-right: 0;
   margin-right: 0;
 }
+
+/* teams */
+
 .teams{
   background-color: #F5F4FA;
   padding-bottom: 94px;
-}
-.teams > .title{
   padding-top: 94px;
 }
-
 .tims-galery{
   background: #FFFFFF;
 }
@@ -215,28 +228,27 @@ a{
   background-color: var(--primery-white-color);
   margin-right: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 0px 0px 4px 4px;
+  border-radius: 0px 0px 4px 4px;
 }
 .teams-galery:last-child{
   margin-right: 0;
 }
-.name{
+.person{
   padding-top:30px;
-  padding-bottom: 20px;
-  color:var(--title-text-color);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.2;
-  text-align: center;
-}
-.role{
   padding-bottom: 30px;
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
 }
+.name{
+  padding-bottom: 20px;
+  color:var(--title-text-color);
+  font-weight: 500;
+}
+
 .footer{
   padding-top: 60px;
+  padding-bottom: 60px;
   background-color:#2F303A;
   font-family: 'Roboto' , sans-serif;
 }
@@ -252,11 +264,11 @@ border-radius: 0px 0px 4px 4px;
 address{
   padding-top: 30px;
 }
-.list-footer>li{
-  padding-bottom: 20px;
+.list-footer-item{
+  margin-bottom: 9px;
 }
-.list-footer>li:last-child{
-  padding-bottom: 60px;
+.list-footer-item:last-child{
+  padding-bottom: 0;
 }
 
 .location{
@@ -287,24 +299,24 @@ address{
 .header-portfolio{
   border-bottom: 1px solid #ECECEC;
 }
-.portfolio{
-  background-color:  #F5F5F5;
+.filter{
+  padding-top: 94px;
+  padding-bottom: 65px;
 }
 .filter-list{
   display:flex;
   align-items:center;
   justify-content: center;
+  margin-bottom: 50px;
 }
 .filter-btn{
   display: inline-block;
   align-content:center;
   margin-right: 8px;
-  padding-top: 94px;
-  padding-bottom: 50px;
 }
 .text-btn{
   border: 1px solid transparent;
-  padding: 12px 26px;
+  padding: 6px 22px;
   border-radius: 6px;
   color: var(--title-text-color);
   background-color: #F5F4FA;
@@ -321,7 +333,8 @@ address{
 .cards-list{
 display: flex;
 flex-wrap: wrap;
-padding-bottom: 65px;
+
+
 }
 .cards-list-item{
 background-color:var(--primery-white-color);
@@ -335,10 +348,13 @@ margin-bottom: 29px;
 a{
   text-decoration: none;
 }
-.title-project{
+.our-projects{
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 25px;
+}
+.title-project{
+  padding-bottom: 20px;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -346,8 +362,6 @@ a{
   letter-spacing: 0.06em;
 }
 .text-project{
-  padding-bottom: 30px;
-  padding-left: 25px;
   font-size: 16px;
   line-height: 1.8;
 }
