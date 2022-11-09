@@ -202,9 +202,10 @@ a{
 .activity-title{
   font-weight: 700;
   font-size: 36px;
+  color: var(--title-text-color);
   line-height: 1.2;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 .activity-galery{
   padding-right: 30px;
@@ -268,7 +269,7 @@ address{
   margin-bottom: 9px;
 }
 .list-footer-item:last-child{
-  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .location{
@@ -333,8 +334,6 @@ address{
 .cards-list{
 display: flex;
 flex-wrap: wrap;
-
-
 }
 .cards-list-item{
 background-color:var(--primery-white-color);
@@ -349,12 +348,12 @@ a{
   text-decoration: none;
 }
 .our-projects{
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   padding-left: 25px;
 }
 .title-project{
-  padding-bottom: 20px;
+  padding-bottom: 4px;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
